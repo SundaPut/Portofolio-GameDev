@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px currentColor;
+  }
+  
+  .border-glow {
+    box-shadow: 0 0 20px currentColor;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151520;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00D9FF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B794F6;
+}
