@@ -1,12 +1,12 @@
 
 import { motion } from 'framer-motion'
 import { FaUnity, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { SiUnrealengine, SiCsharp, SiCplusplus } from 'react-icons/si'
+import { SiUnity, SiUnrealengine, SiDotnet, SiCplusplus, SiGit } from "react-icons/si";
 
 const skills = [
   { icon: <FaUnity />, name: 'Unity', level: 95 },
   { icon: <SiUnrealengine />, name: 'Unreal Engine', level: 85 },
-  { icon: <SiCsharp />, name: 'C#', level: 90 },
+  { icon: <SiDotnet />, name: 'C#', level: 90 },
   { icon: <SiCplusplus />, name: 'C++', level: 80 },
   { icon: <FaGithub />, name: 'Git', level: 85 },
 ]
