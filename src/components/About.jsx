@@ -4,11 +4,11 @@ import { FaUnity, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiUnity, SiUnrealengine, SiDotnet, SiCplusplus, SiGit } from "react-icons/si";
 
 const skills = [
-  { icon: <FaUnity />, name: 'Unity', level: 95 },
-  { icon: <SiUnrealengine />, name: 'Unreal Engine', level: 85 },
-  { icon: <SiDotnet />, name: 'C#', level: 90 },
-  { icon: <SiCplusplus />, name: 'C++', level: 80 },
-  { icon: <FaGithub />, name: 'Git', level: 85 },
+  { icon: <FaUnity />, name: 'Unity', level: 65 },
+  { icon: <SiUnrealengine />, name: 'Unreal Engine', level: 35 },
+  { icon: <SiDotnet />, name: 'C#', level: 68 },
+  { icon: <SiCplusplus />, name: 'C++', level: 25 },
+  { icon: <FaGithub />, name: 'Git', level: 45 },
 ]
 
 export default function About() {
@@ -32,9 +32,12 @@ export default function About() {
           viewport={{ once: true }}
           className="text-white/85 leading-relaxed card-glass p-6 rounded-2xl"
         >
-          Passionate game programmer with 5+ years of experience creating engaging and innovative gaming experiences.
-          I specialize in high‑performance gameplay systems, AI, and immersive interactions. My focus is clean code,
-          optimization, and delivering delightful player experiences.
+          Students of the Jakarta Creative Media State Polytechnic, have interests and expertise in programming, 
+          especially in developing games. I have been involved in several game projects. 
+          I am experienced in using popular game engines and have a good understanding of game design and programming logic.
+          I have experience in game development, where I have been involved in various projects that strengthen my programming skills. 
+          Through each project, I strive to create an interesting and innovative gaming experience. 
+          I am constantly learning and adapting to the latest trends in game development, with the aim of making a meaningful contribution in every project I work on.
         </motion.p>
 
         <div className="grid sm:grid-cols-2 gap-6">

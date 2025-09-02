@@ -1,16 +1,28 @@
 
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from "react"
 
-export default function useTyping(text, speed = 35, delay = 250) {
-  const [out, setOut] = useState('')
+export default function useTyping(text, speed = 50, delay = 0) {
+  const [displayed, setDisplayed] = useState("")
+
   useEffect(() => {
     let i = 0
-    const start = setTimeout(() => {
-      const t = setInterval(() => {
-        setOut(prev => (i < text.length ? prev + text[i++] : (clearInterval(t), prev)))
+    setDisplayed("")
+
+    const timeout = setTimeout(() => {
+      const interval = setInterval(() => {
+        setDisplayed((prev) => prev + text.charAt(i))
+        i++
+        if (i >= text.length) {
+          clearInterval(interval)
+        }
       }, speed)
     }, delay)
-    return () => { clearTimeout(start) }
+
+    return () => {
+      clearTimeout(timeout)
+      setDisplayed("")
+    }
   }, [text, speed, delay])
-  return out
+
+  return displayed
 }

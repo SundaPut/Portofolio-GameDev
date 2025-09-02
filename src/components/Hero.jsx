@@ -1,21 +1,28 @@
 
 import { motion } from 'framer-motion'
 import useTyping from './useTyping'
+import profilePic from '../profile/FotoProfile.jpg'
 
 export default function Hero() {
-  const typed = useTyping("Hi, I'm Alex Chen, Game Programmer specialized in Unity & Unreal Engine", 24, 500)
+  const typed = useTyping("Hi, I'm Agus, Game Programmer specialized in Unity", 24, 500)
 
   return (
     <div className="min-h-screen flex items-center justify-center text-center relative">
-      <div className="absolute inset-x-0 top-24 pointer-events-none">
-        <motion.img
-          src="/profile.png"
-          alt="Profile"
+      <div className="absolute inset-x-0 top-24">
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="mx-auto w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-neon-blue shadow-neon object-cover"
+          className="relative mx-auto w-40 h-40 md:w-52 md:h-52 rounded-2xl p-[3px] bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink shadow-neon"
+        >
+        <img
+          src={profilePic}
+          alt="Profile"
+          className="w-full h-full rounded-2xl object-cover"
         />
+          {/* Glow ring animasi */}
+          <div className="absolute inset-0 rounded-2xl border-4 border-neon-purple blur-md animate-pulse"></div>
+        </motion.div>
       </div>
 
       <div className="max-w-5xl px-6">
@@ -23,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: .8 }}
-          className="mt-36 font-display text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight neon-text"
+          className="mt-80 font-mono text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight neon-text"
         >
           {typed || ' '}
         </motion.h1>

@@ -31,14 +31,14 @@ export default function Contact() {
         </motion.form>
 
         <div className="space-y-4">
-          <a href="mailto:alex.chen@gamedev.com" className="block p-4 rounded-xl card-glass border border-white/10 hover:border-neon-purple transition">
-            <FaEnvelope className="inline-block mr-2 text-neon-blue" /> alex.chen@gamedev.com
+          <a href="mailto:agussundawaputra@gmail.com" className="block p-4 rounded-xl card-glass border border-white/10 hover:border-neon-purple transition">
+            <FaEnvelope className="inline-block mr-2 text-neon-blue" /> agussundawaputra@gmail.com
           </a>
-          <a href="https://github.com/alexchen" target="_blank" className="block p-4 rounded-xl card-glass border border-white/10 hover:border-neon-purple transition">
-            <FaGithub className="inline-block mr-2 text-neon-blue" /> @alexchen
+          <a href="https://github.com/SundaPut" target="_blank" className="block p-4 rounded-xl card-glass border border-white/10 hover:border-neon-purple transition">
+            <FaGithub className="inline-block mr-2 text-neon-blue" /> @SundaPut
           </a>
-          <a href="https://linkedin.com" target="_blank" className="block p-4 rounded-xl card-glass border border-white/10 hover:border-neon-purple transition">
-            <FaLinkedin className="inline-block mr-2 text-neon-blue" /> Alex Chen
+          <a href="https://www.linkedin.com/in/muhamad-agus-sundawa-putra-804020322/" target="_blank" className="block p-4 rounded-xl card-glass border border-white/10 hover:border-neon-purple transition">
+            <FaLinkedin className="inline-block mr-2 text-neon-blue" /> Muhamad Agus Sundawa Putra
           </a>
         </div>
       </div>

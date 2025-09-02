@@ -2,37 +2,42 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Modal from './Modal'
+import project1 from '../project/Project1.jpg'
+import project2 from '../project/Project2.jpg'
+import project3 from '../project/Project3.gif'
+import project4 from '../project/Project4.jpg'
+import project5 from '../project/Project5.png'
 
 const data = [
   {
-    title: 'Neon Runner VR',
-    description: 'High‑speed VR racing with cyberpunk aesthetics. Built with Unity XR, custom physics and haptics.',
-    tools: ['Unity', 'C#', 'XR Interaction Toolkit'],
-    media: 'https://images.unsplash.com/photo-1526406915894-6f3d2ce3f6be?q=80&w=1200&auto=format&fit=crop'
+    title: 'Overnight: Un peace',
+    description: 'Game 2d Sidescroller Survival Horor yang berfokus pada gameplay yang menantang dan semakin sulit di setiap levelnya.',
+    tools: ['Unity', 'C#'],
+    media: project1
   },
   {
-    title: 'Shadow Realms RPG',
-    description: 'Dark fantasy ARPG with combo‑driven combat, state machines and behavior trees.',
-    tools: ['Unreal', 'C++', 'Gameplay Ability System'],
-    media: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop'
+    title: 'PC Pedia',
+    description: 'PC Pedia adalah game simulator berbasis 2d yang berfokus pada edukasi dasar mengenai komputer. game ini mengajarkan semua hal dasar mengenai komputer dari penjelasan fungsi dari setiap komponen komputer, cara pemasangan, hingga cara penggunaannya.',
+    tools: ['Unity', 'C#'],
+    media: project2
   },
   {
-    title: 'Quantum Puzzle Platform',
-    description: 'Mind‑bending platformer using time rewind mechanics and shader graph tricks.',
-    tools: ['Unity', 'Shader Graph', 'C#'],
-    media: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop'
+    title: 'AnimA - The Fallen Heroes & Mystic Forest',
+    description: 'AnimA adalah sebuah Game Platformer aksi-petualangan yang menghadirkan dunia gelap dan mistis terinspirasi dari cerita rakyat serta mitologi Indonesia. Jelajahi dunia penuh misteri, tempat roh kuno, makhluk mitos, dan artefak legendaris menunggu untuk ditemukan.',
+    tools: ['Unity', 'C#'],
+    media: project3
   },
   {
-    title: 'Multiplayer Arena Shooter',
-    description: 'Fast‑paced online shooter featuring client prediction and lag compensation.',
-    tools: ['Unreal', 'C++', 'Replication'],
-    media: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop'
+    title: 'Archer No.9',
+    description: 'Archer No.9 Merupakan game 3D yang menggabungkan elemen Third person Dan First Person dimana tujuan untuk mengalahkan naga sebagai Bos Terakhir dan dipenuhi dengan Puzzel-puzzel yang menarik.',
+    tools: ['Unity', 'C#'],
+    media: project4
   },
   {
-    title: 'Procedural Worlds',
-    description: 'GPU‑accelerated terrain generation with marching cubes and compute shaders.',
-    tools: ['Unity', 'Compute Shader', 'C#'],
-    media: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop'
+    title: 'Game Shooter 3D',
+    description: 'Merupakan Game Yang Dibuat Untuk keperluan Tugas Kuliah.',
+    tools: ['Unreal', 'C++', 'AI'],
+    media: project5
   },
   {
     title: 'AI Companion',
